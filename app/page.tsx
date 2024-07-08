@@ -3,8 +3,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main >
-      
-
       <div
         className="hero min-h-screen"
         style={{

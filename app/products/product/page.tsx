@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>
+    <div className=' bg-base-200 '>
         <div className="hero bg-base-200 min-h-screen">
             <div className="max-w-5xl mx-auto hero-content flex-col lg:flex-row   gap-12">
                 <img
@@ -17,7 +17,35 @@ const page = () => {
                 <button className="btn btn-primary">Get Started</button>
                 </div>
             </div>
+
         </div>
+
+        {/* Accordion */}
+        <div className="max-w-2xl mx-auto pb-20">
+            <div className="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" defaultChecked />
+                <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                    <div className="collapse-content">
+                        <p>hello</p>
+                    </div>
+                </div>
+                <div className="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                    <div className="collapse-content">
+                        <p>hello</p>
+                    </div>
+                </div>
+                <div className="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2" />
+                <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div className="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+        </div>
+
+
     </div>
   )
 }
